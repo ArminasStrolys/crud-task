@@ -3,15 +3,21 @@ import RowList from "./components/RowList";
 import CreateForm from "./components/CreateForm";
 import Modal from "./components/Modal";
 import data from './data/data.json'
+import React, { useState } from 'react';
+
 
 function App() {
+
+const [heroData, setHeroData] = useState(data)
+
   return (
     <div className="jumbotron text-center">
-      <Table squad={data.squadName} town={data.homeTown} base={data.secretBase}>
+      {/* <Table squad={heroData.squadName} town={heroData.homeTown} base={heroData.secretBase}>
         <RowList />
       </Table>
       <CreateForm />
-      <Modal />
+      <Modal /> */}
+      test
     </div>
   );
 }
